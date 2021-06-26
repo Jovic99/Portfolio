@@ -1,0 +1,67 @@
+nav{
+    background-color: $background-color;
+
+    #links li a{
+        color: $text-color;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        transition: 0s color;
+    }
+}
+
+.line{
+    height: 1px;
+    width: 150px;
+    background-color: $text-color;
+}
+
+#links li a:hover{
+    color: $background-color;
+    transition-delay: 350ms;
+}
+
+#links li a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: $text-color;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: -1;
+    transition: ease-out 400ms;
+    width: 0px;
+}
+
+#links li a:hover::before{
+    opacity: 1;
+    width: 100%;
+}
+
+@media only screen and (max-width: 765px){
+    .nav-line{
+        display: none;
+    }
+
+    #links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 765px){
+    #links{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    #links li a{
+        font-size: 1.6rem;
+    }
+}
