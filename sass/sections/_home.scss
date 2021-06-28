@@ -1,0 +1,70 @@
+@media only screen and (min-width: 765px){
+    #home{
+
+        #social-media{
+            position: fixed;
+            bottom: 0;
+            left: 6%;
+            align-items: center;
+
+            .line-bottom{
+                background-color: $text-color;
+                height: 10vh;
+                width: 1px;
+            }
+
+            a{
+                color: $text-color;
+                font-size: 2rem;
+                transition: transform 500ms;
+
+                &:hover{
+                    transform: rotate(360deg);
+                    color: $hover-color;
+                }
+            }
+        }
+
+        #name{
+            padding-top: 10rem;
+            padding-left: 15%;
+            h1, h2{
+                font-size: 4rem;
+                color: $text-color;
+                transition: letter-spacing 250ms;
+
+                &:hover{
+                    letter-spacing: 0.5rem;
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 765px){
+
+    #home{
+
+        #social-media{
+            display: none !important;
+        }
+
+        #name{
+            text-align: center;
+            padding-top: 10rem;
+            h1, h2{
+                font-size: 2rem;
+                color: $text-color;
+                transition: letter-spacing 250ms;
+
+                &:hover{
+                    letter-spacing: 0.5rem;
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}
+

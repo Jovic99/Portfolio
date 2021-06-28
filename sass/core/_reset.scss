@@ -5,5 +5,9 @@
 
 html{
     box-sizing: border-box;
+}
+
+#background{
     background-color: $background-color;
+    height: 200vh;
 }

@@ -6,7 +6,11 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#background {
   background-color: #19151d;
+  height: 200vh;
 }
 
 nav {
@@ -40,7 +44,7 @@ nav #links li a {
   position: absolute;
   inset: 0;
   background-color: #a39e9e;
-  border-radius: 10px;
+  border-radius: 15px;
   opacity: 0;
   z-index: -1;
   -webkit-transition: ease-out 400ms;
@@ -86,10 +90,76 @@ nav #links li a {
         -ms-flex-align: center;
             align-items: center;
   }
+  #links li a {
+    letter-spacing: 0.2em;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   #links li a {
     font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 765px) {
+  #home #social-media {
+    position: fixed;
+    bottom: 0;
+    left: 6%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #home #social-media .line-bottom {
+    background-color: #a39e9e;
+    height: 10vh;
+    width: 1px;
+  }
+  #home #social-media a {
+    color: #a39e9e;
+    font-size: 2rem;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  #home #social-media a:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    color: #98e91e;
+  }
+  #home #name {
+    padding-top: 10rem;
+    padding-left: 15%;
+  }
+  #home #name h1, #home #name h2 {
+    font-size: 4rem;
+    color: #a39e9e;
+    -webkit-transition: letter-spacing 250ms;
+    transition: letter-spacing 250ms;
+  }
+  #home #name h1:hover, #home #name h2:hover {
+    letter-spacing: 0.5rem;
+    color: #98e91e;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  #home #social-media {
+    display: none !important;
+  }
+  #home #name {
+    text-align: center;
+    padding-top: 10rem;
+  }
+  #home #name h1, #home #name h2 {
+    font-size: 2rem;
+    color: #a39e9e;
+    -webkit-transition: letter-spacing 250ms;
+    transition: letter-spacing 250ms;
+  }
+  #home #name h1:hover, #home #name h2:hover {
+    letter-spacing: 0.5rem;
+    color: #98e91e;
   }
 }
