@@ -1,0 +1,30 @@
+@keyframes show{
+    from{
+        width: 100%;
+    }
+
+    to{
+        width: 0px;
+    }
+}
+
+@keyframes show-2{
+    from{
+        height: 100%;
+    }
+
+    to{
+        height: 0px;
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+

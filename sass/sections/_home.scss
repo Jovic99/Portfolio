@@ -1,6 +1,6 @@
 @media only screen and (min-width: 765px){
     #home{
-
+        font-family: Blippo, fantasy;
         height: 100vh;
 
         #social-media{
@@ -8,6 +8,19 @@
             bottom: 0;
             left: 6%;
             align-items: center;
+
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                inset: 0;
+                left: -10px;
+                right: -10px;
+                background-color: $background-color;
+                animation: show-2 1s forwards;
+                animation-delay: 0.5s;
+                z-index: 3;
+            }
 
             .line-bottom{
                 background-color: $text-color;
@@ -30,11 +43,13 @@
         #name{
             padding-top: 8rem;
             padding-left: 15%;
+            animation: appear 5s ;
 
             h1{
                 font-size: 6rem;
                 color: $text-color;
                 transition: letter-spacing 250ms;
+                
 
                 &:hover{
                     letter-spacing: 0.5rem;
@@ -43,7 +58,7 @@
             }
 
             h2{
-                font-size: 3.5rem;
+                font-size: 2rem;
                 color: $text-color;
                 transition: letter-spacing 250ms;
                 opacity: 0.5;
@@ -57,6 +72,7 @@
 
             h4{
                 color: $hover-color;
+
             }
 
         }
@@ -67,8 +83,9 @@
 @media only screen and (max-width: 765px){
 
     #home{
-
+        font-family: Blippo, fantasy;
         height: 80vh;
+        animation: appear 5s ;
 
         #social-media{
             display: none !important;

@@ -1,3 +1,57 @@
+@-webkit-keyframes show {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0px;
+  }
+}
+
+@keyframes show {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0px;
+  }
+}
+
+@-webkit-keyframes show-2 {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+@keyframes show-2 {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +70,7 @@ html {
 
 nav {
   background-color: #19151d;
+  position: relative;
 }
 
 nav #links li a {
@@ -25,6 +80,19 @@ nav #links li a {
   z-index: 1;
   -webkit-transition: 0s color;
   transition: 0s color;
+}
+
+nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-color: #19151d;
+  -webkit-animation: show 3s forwards;
+          animation: show 3s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  z-index: 3;
 }
 
 .line {
@@ -111,6 +179,7 @@ nav #links li a {
 
 @media only screen and (min-width: 765px) {
   #home {
+    font-family: Blippo, fantasy;
     height: 100vh;
   }
   #home #social-media {
@@ -120,6 +189,20 @@ nav #links li a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #home #social-media::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    left: -10px;
+    right: -10px;
+    background-color: #19151d;
+    -webkit-animation: show-2 1s forwards;
+            animation: show-2 1s forwards;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    z-index: 3;
   }
   #home #social-media .line-bottom {
     background-color: #a39e9e;
@@ -142,6 +225,8 @@ nav #links li a {
   #home #name {
     padding-top: 8rem;
     padding-left: 15%;
+    -webkit-animation: appear 5s;
+            animation: appear 5s;
   }
   #home #name h1 {
     font-size: 6rem;
@@ -154,7 +239,7 @@ nav #links li a {
     color: #98e91e;
   }
   #home #name h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: #a39e9e;
     -webkit-transition: letter-spacing 250ms;
     transition: letter-spacing 250ms;
@@ -172,7 +257,10 @@ nav #links li a {
 
 @media only screen and (max-width: 765px) {
   #home {
+    font-family: Blippo, fantasy;
     height: 80vh;
+    -webkit-animation: appear 5s;
+            animation: appear 5s;
   }
   #home #social-media {
     display: none !important;
