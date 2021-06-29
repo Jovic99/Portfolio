@@ -1,6 +1,8 @@
 @media only screen and (min-width: 765px){
     #home{
 
+        height: 100vh;
+
         #social-media{
             position: fixed;
             bottom: 0;
@@ -9,7 +11,7 @@
 
             .line-bottom{
                 background-color: $text-color;
-                height: 10vh;
+                height: 15vh;
                 width: 1px;
             }
 
@@ -26,10 +28,11 @@
         }
 
         #name{
-            padding-top: 10rem;
+            padding-top: 8rem;
             padding-left: 15%;
-            h1, h2{
-                font-size: 4rem;
+
+            h1{
+                font-size: 6rem;
                 color: $text-color;
                 transition: letter-spacing 250ms;
 
@@ -38,6 +41,24 @@
                     color: $hover-color;
                 }
             }
+
+            h2{
+                font-size: 3.5rem;
+                color: $text-color;
+                transition: letter-spacing 250ms;
+                opacity: 0.5;
+
+                &:hover{
+                    letter-spacing: 0.3rem;
+                    opacity: 1;
+                    color: $hover-color;
+                }
+            }
+
+            h4{
+                color: $hover-color;
+            }
+
         }
     }
     
@@ -47,6 +68,8 @@
 
     #home{
 
+        height: 80vh;
+
         #social-media{
             display: none !important;
         }
@@ -54,7 +77,8 @@
         #name{
             text-align: center;
             padding-top: 10rem;
-            h1, h2{
+
+            h1{
                 font-size: 2rem;
                 color: $text-color;
                 transition: letter-spacing 250ms;
@@ -63,6 +87,22 @@
                     letter-spacing: 0.5rem;
                     color: $hover-color;
                 }
+            }
+
+            h2{
+                font-size: 1.5rem;
+                color: $text-color;
+                transition: letter-spacing 250ms;
+                opacity: 0.5;
+
+                &:hover{
+                    opacity: 1;
+                    color: $hover-color;
+                }
+            }
+
+            h4{
+                color: $hover-color;
             }
         }
     }

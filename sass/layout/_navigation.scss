@@ -40,6 +40,15 @@ nav{
 }
 
 @media only screen and (max-width: 765px){
+
+    #nav-bar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
     .nav-line{
         display: none;
     }

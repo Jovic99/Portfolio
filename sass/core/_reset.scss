@@ -5,9 +5,12 @@
 
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    
 }
 
 #background{
     background-color: $background-color;
     height: 200vh;
+    
 }
