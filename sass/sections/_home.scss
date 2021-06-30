@@ -41,7 +41,7 @@
         }
 
         #name{
-            padding-top: 8rem;
+            padding-top: 10%;
             padding-left: 15%;
             animation: appear 5s ;
 
@@ -63,11 +63,6 @@
                 transition: letter-spacing 250ms;
                 opacity: 0.5;
 
-                &:hover{
-                    letter-spacing: 0.3rem;
-                    opacity: 1;
-                    color: $hover-color;
-                }
             }
 
             h4{
@@ -75,7 +70,14 @@
 
             }
 
+            p{
+                color: $hover-color;
+                font-size: 2.5rem;
+                padding-top: 1rem;
+            }
+
         }
+
     }
     
 }
@@ -111,15 +113,16 @@
                 color: $text-color;
                 transition: letter-spacing 250ms;
                 opacity: 0.5;
-
-                &:hover{
-                    opacity: 1;
-                    color: $hover-color;
-                }
             }
 
             h4{
                 color: $hover-color;
+            }
+
+            p{
+                padding-top: 2rem;
+                color: $hover-color;
+                font-size: 1.5rem;
             }
         }
     }

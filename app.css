@@ -223,7 +223,7 @@ nav::before {
     color: #98e91e;
   }
   #home #name {
-    padding-top: 8rem;
+    padding-top: 10%;
     padding-left: 15%;
     -webkit-animation: appear 5s;
             animation: appear 5s;
@@ -245,13 +245,13 @@ nav::before {
     transition: letter-spacing 250ms;
     opacity: 0.5;
   }
-  #home #name h2:hover {
-    letter-spacing: 0.3rem;
-    opacity: 1;
-    color: #98e91e;
-  }
   #home #name h4 {
     color: #98e91e;
+  }
+  #home #name p {
+    color: #98e91e;
+    font-size: 2.5rem;
+    padding-top: 1rem;
   }
 }
 
@@ -286,11 +286,12 @@ nav::before {
     transition: letter-spacing 250ms;
     opacity: 0.5;
   }
-  #home #name h2:hover {
-    opacity: 1;
-    color: #98e91e;
-  }
   #home #name h4 {
     color: #98e91e;
+  }
+  #home #name p {
+    padding-top: 2rem;
+    color: #98e91e;
+    font-size: 1.5rem;
   }
 }
