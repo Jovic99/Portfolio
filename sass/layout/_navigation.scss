@@ -1,6 +1,6 @@
 nav{
-    background-color: $background-color;
     position: relative;
+    font-family:sans-serif;
 
     #links li a{
         color: $text-color;
@@ -8,6 +8,19 @@ nav{
         position: relative;
         z-index: 1;
         transition: 0s color;
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            inset: 0;
+            background-color: $text-color;
+            border-radius: 15px;
+            opacity: 0;
+            z-index: -1;
+            transition: ease-out 400ms;
+            width: 0px;
+        }
     }
 
     &::before{
@@ -28,22 +41,14 @@ nav{
     background-color: $text-color;
 }
 
+#links{
+    display: flex;
+    flex-direction: row;
+}
+
 #links li a:hover{
     color: $background-color;
     transition-delay: 350ms;
-}
-
-#links li a::before{
-    content: "";
-    display: block;
-    position: absolute;
-    inset: 0;
-    background-color: $text-color;
-    border-radius: 15px;
-    opacity: 0;
-    z-index: -1;
-    transition: ease-out 400ms;
-    width: 0px;
 }
 
 #links li a:hover::before{
@@ -54,6 +59,7 @@ nav{
 @media only screen and (max-width: 765px){
 
     #nav-bar{
+        background-color: $background-color;
         position: fixed;
         top: 0;
         right: 0;
@@ -66,18 +72,13 @@ nav{
     }
 
     #links{
-        display: flex;
-        flex-direction: row;
         justify-content: space-around;
-        
     }
 
 }
 
 @media only screen and (min-width: 765px){
     #links{
-        display: flex;
-        flex-direction: row;
         justify-content: flex-end;
         align-items: center;
 

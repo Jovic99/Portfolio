@@ -1,0 +1,65 @@
+#skills{
+    text-align: center;
+    margin-top: 10rem;
+
+    h1{
+        background-color: $hover-color;
+        font-weight: bold;
+        border-radius: 15px;
+    }
+
+    #skill-icons{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+
+        img{
+            aspect-ratio: 1 / 1;
+        }
+    }
+}
+
+@media only screen and (min-width: 765px){
+    #skills{
+        text-align: center;
+        padding-left: 15%;
+    
+        h1{
+            width: 85%;
+        }
+    
+        #skill-icons{
+            width: 85%;
+
+            img{
+                width: 5rem;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 765px){
+    #skills{
+        text-align: center;
+        
+    
+        h1{
+            background-color: $hover-color;
+            font-weight: bold;
+            margin: 0 5%;
+            
+        }
+    
+        #skill-icons{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+            img{
+                width: 2rem;
+                aspect-ratio: 1 / 1;
+            }
+        }
+    }
+}
