@@ -28,3 +28,26 @@
     }
 }
 
+@keyframes wiggle{
+    0%{transform: rotate(0deg);}
+    10%{transform: rotate(-8deg);}
+    20%{transform: rotate(8deg);}
+    40%{transform: rotate(-8deg);}
+    60%{transform: rotate(8deg);}
+    100%{transform: rotate(0deg);}
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(0.6);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+

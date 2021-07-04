@@ -1,0 +1,115 @@
+#projects{
+    h1{
+        font-weight: bold;
+        background-color: $hover-color;
+        color: $background-color;
+        line-height: 60px;
+        
+    }
+
+    #project-cards{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .card{
+        box-shadow: 0 0 0 5px $hover-color;
+        background-color: $background-color;
+
+        h5{
+            color: $hover-color;
+        }
+
+        .btn{
+            color: $text-color;
+            background-color: $background-color;
+            border: solid 4px currentColor;
+
+            &:hover{
+                color: $hover-color;
+            }
+        }
+    }
+
+    p{
+        color: $text-color;
+
+        a{
+            text-decoration: none;
+            color: $hover-color;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 765px){
+    #projects{
+        margin-top: 10rem;
+        padding-left: 15%;
+
+        h1{
+            border-radius: 0 0 70px 0;
+            width: 50%;
+            padding-left: 5%;
+        }
+
+        .card{
+            width: 280px;
+            height: 350px;
+
+            h5{
+                font-size: 2em;
+            }
+
+            .btn{
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    p{
+        font-size: 3rem;
+
+        a:hover{
+            transform: scale(1.2);
+                opacity: 0.7;
+        }
+    }
+}
+
+@media only screen and (max-width: 765px){
+    #projects{
+        margin-top: 5rem;
+        margin-right: 5%;
+        margin-left: 5%;
+
+
+        h1{
+            text-align: center;
+            border-radius: 0 0 35px 35px;
+        }
+
+        #project-cards{
+            display: flex;
+            justify-content: center;
+        }
+
+        .card{
+            width: 180px;
+            height: 260px;
+
+            h5{
+                font-size: 1em;
+            }
+
+            .btn{
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.23rem;
+    }
+}
