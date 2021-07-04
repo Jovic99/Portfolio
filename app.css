@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/04559eae8b7926d003f9f2e036c9e076?family=Blippo);
 @-webkit-keyframes show {
   from {
     width: 100%;
@@ -6,7 +7,6 @@
     width: 0px;
   }
 }
-
 @keyframes show {
   from {
     width: 100%;
