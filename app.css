@@ -136,6 +136,16 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #19151d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #98e91e;
+  border-radius: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
